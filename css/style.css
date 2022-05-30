@@ -1,0 +1,47 @@
+*{
+    background-color: whitesmoke;
+}
+
+body{
+    height: 80%;
+    margin: 10%;
+    border: 2px outset purple; 
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+}
+
+#pic-and-stats{
+    display: flex;
+    flex-basis: 30%;
+}
+
+#pic-and-stats image{
+    height: 10%;
+}
+
+#pics{
+    width: 50%;
+    height: 10%;
+    position: relative;
+    margin: 10px;
+}
+
+#blursed{
+    max-width: 50%;
+    position: absolute;
+    z-index: 1;
+    display: inline;
+    visibility: hidden;
+}
+
+#md{
+    max-width: 50%;
+    position: absolute;
+    z-index: 2;
+    display: inline;
+    visibility: visible;
+    
+}
