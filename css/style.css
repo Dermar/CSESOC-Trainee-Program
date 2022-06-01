@@ -1,47 +1,69 @@
 *{
-    background-color: whitesmoke;
+    background-color: white;
+    font-family: fantasy;
 }
 
 body{
-    height: 80%;
     margin: 10%;
     border: 2px outset purple; 
-    overflow: hidden;
 }
 
 h1{
     text-align: center;
 }
 
-#pic-and-stats{
-    display: flex;
-    flex-basis: 30%;
+h2, h3{
+    text-decoration: overline;
+    text-decoration-color: purple;
 }
 
-#pic-and-stats image{
-    height: 10%;
+DT{
+    color: purple;
+    padding-bottom: 3%;
+}
+
+#pic-and-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+#pic-and-info .info{
+    width: 25%;
+    padding: 2%;
+}
+
+#pic-and-info img{
+    width: 100%;
+    position: relative;
 }
 
 #pics{
-    width: 50%;
-    height: 10%;
-    position: relative;
     margin: 10px;
+    width: 20%;
+    height: 40%;
+    display: flex;  
+    flex-wrap: wrap;
 }
 
 #blursed{
-    max-width: 50%;
-    position: absolute;
     z-index: 1;
-    display: inline;
-    visibility: hidden;
+    display: none;
 }
 
 #md{
-    max-width: 50%;
-    position: absolute;
+    display: unset;
     z-index: 2;
-    display: inline;
-    visibility: visible;
-    
+}
+
+#toggle{
+    z-index: 3;
+    text-align: center;
+}
+
+#stats, #emails{
+    padding: 3%;
+}
+
+#specific-info{
+    display: flex;
 }

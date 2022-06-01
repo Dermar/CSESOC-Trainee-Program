@@ -5,20 +5,22 @@ truthBut.addEventListener("click", swap);
 function swap(){
     let myFace = document.getElementById("md");
     let faceStyles = window.getComputedStyle(myFace);
-    let faceVis = faceStyles.getPropertyValue('visibility'); 
+    let faceVis = faceStyles.getPropertyValue('display'); 
 
     let other = document.getElementById("blursed");
     let otherStyles = window.getComputedStyle(other);
-    let otherVis = otherStyles.getPropertyValue('visibility');
-    if (faceVis === "hidden"){
-        myFace.style.visibility = "visible";
-        other.style.visibility = "hidden";
+    let otherVis = otherStyles.getPropertyValue('display');
+    //alert(faceVis);
+    //alert(otherVis);
+    if (faceVis === "none"){
+        myFace.style.display = "inline";
+        other.style.display = "none";
         truthBut.innerHTML = "See the truth";
     }
-    else if (otherVis === "hidden"){
+    else if (otherVis === "none"){
         
-        myFace.style.visibility = "hidden";
-        other.style.visibility = "visible";
+        myFace.style.display = "none";
+        other.style.display = "inline";
         truthBut.innerHTML = "Hide the truth";
     }
 }
