@@ -1,11 +1,12 @@
 *{
     background-color: white;
-    font-family: fantasy;
+    background-image: url("../images/background.png");
 }
 
 body{
     margin: 10%;
     border: 2px outset purple; 
+    
 }
 
 h1{
