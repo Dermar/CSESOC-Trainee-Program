@@ -1,31 +1,40 @@
 *{
-    background-color: white;
+    color: rgba(246, 198, 163, 0.922);
     /*background-image: url("../images/background.png");*/
+    font-size: large;
 }
-
 body{
-    margin: 10%;
-    border: 2px outset purple; 
-    
+    background-color: rgba(219, 219, 219, 0.288);
 }
+#header{
+    text-align:left;
+    font-family: Snell roundhand;
+    background-color: rgb(61, 112, 123);
+    margin: 0;
+    padding: 1%;
 
+}
+h1, small{
+    background-color: rgb(61, 112, 123);
+}
 h1{
-    text-align: center;
+    font-size: 40px;
 }
 
 h2, h3{
     text-decoration: overline;
-    text-decoration-color: purple;
+    text-decoration-color: rgb(61, 112, 123);
 }
 
 DT{
-    color: purple;
+    color: rgb(61, 112, 123);
     padding-bottom: 3%;
 }
 
 #pic-and-info{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #pic-and-info .info{
@@ -33,32 +42,39 @@ DT{
     padding: 2%;
 }
 
-#pic-and-info img{
-    width: 100%;
+#faces img{
     position: relative;
 }
 
 #pics{
     margin: 10px;
-    width: 20%;
-    height: 40%;
+    width: 40%;
     display: flex;  
     flex-wrap: wrap;
 }
 
 #blursed{
     z-index: 1;
+    width: 100%;
     display: none;
 }
 
 #md{
     display: unset;
+    width: 80%;
     z-index: 2;
 }
 
 #toggle{
     z-index: 3;
     text-align: center;
+    
+}
+
+button{
+    background-color: rgb(61, 112, 123);
+    border-radius: 10px;
+    border-color: rgba(219, 219, 219, 0.288);
 }
 
 #stats, #emails{
@@ -67,4 +83,14 @@ DT{
 
 #specific-info{
     display: flex;
+    
 }
+
+#echo{
+    padding: 10%;
+}
+
+#echo img{
+    width: 70%;
+}
+

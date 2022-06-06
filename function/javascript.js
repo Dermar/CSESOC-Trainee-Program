@@ -25,3 +25,11 @@ function swap(){
     }
 }
 
+var petBut = document.getElementById("pet")
+petBut.addEventListener("click", pet);
+
+function pet(){
+    var response = document.createElement("p");
+    response.textContent = "appreciative lick";
+    document.getElementById("petList").appendChild(response);
+}
